@@ -136,6 +136,10 @@ function () {
     return this.data[propName];
   };
 
+  User.prototype.set = function (update) {
+    Object.assign(this.data, update);
+  };
+
   return User;
 }();
 
@@ -153,8 +157,11 @@ var user = new User_1.User({
   name: 'Dan',
   age: 14
 });
-console.log(user.get(name));
-console.log(user.get(age));
+user.set({
+  age: 105
+});
+console.log(user.get('name'));
+console.log(user.get('age'));
 },{"./models/User":"src/models/User.ts"}],"../../../.nvm/versions/node/v14.5.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -183,7 +190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60115" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50444" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
