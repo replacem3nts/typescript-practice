@@ -24,6 +24,16 @@
       "name": "Haka",
       "age": 42,
       "id": 5
+    },
+    {
+      "name": "Bojangles",
+      "age": 165,
+      "id": 6
+    },
+    {
+      "name": "Bojangles",
+      "age": 165,
+      "id": 7
     }
   ]
 }

@@ -3,7 +3,6 @@ import { Attributes } from './Attributes';
 import { Eventing } from './Eventing';
 import { ApiSync } from './ApiSync';
 import { Collection } from './Collection';
-import { AxiosResponse } from 'axios';
 
 export interface UserProps {
   id?: number;
